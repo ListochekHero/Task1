@@ -1,0 +1,14 @@
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <stdio.h>
+#include <netinet/in.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <resolv.h>
+#include <ares.h>
+#include <netdb.h>
+#include <arpa/inet.h>
+#include <sys/select.h>
+#include <ldns/ldns.h>
+#include <sys/epoll.h>
+#include <sys/wait.h>
