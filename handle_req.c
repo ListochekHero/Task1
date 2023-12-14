@@ -19,6 +19,7 @@ ssize_t ask_google_dns(ConfigFileData *config_file_data, int len_of_req_for_goog
         perror("Send DNS-request failed");
         close(send_req_socket);
         exit(EXIT_FAILURE);
+        
     }
     struct sockaddr_in google_socket_addr;
     unsigned int google_addr_len = sizeof(google_socket_addr);
